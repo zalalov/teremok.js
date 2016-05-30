@@ -1,0 +1,62 @@
+/* BASIC STYLES */
+.hidden {
+    display: none;
+}
+.invisible {
+    visibility: hidden;
+}
+.faint {
+    color: #898989;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 16px;
+    color: #464646;
+}
+
+.margin_top {
+    margin-top: 15px;
+}
+
+.margin_bottom {
+    margin-bottom: 15px;
+}
+
+.margin_left {
+    margin-left: 15px;
+}
+
+.margin_right {
+    margin-right: 15px;
+}
+
+.padding_top {
+    padding-top: 15px;
+}
+
+.padding_bottom {
+    padding-bottom: 15px;
+}
+
+.padding_left {
+    padding-left: 15px;
+}
+
+.padding_right {
+    padding-right: 15px;
+}
+
+.full_padding {
+    padding: 15px !important;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.border_bottom {
+    border-bottom:  1px solid #c8c8c8;
+}

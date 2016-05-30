@@ -1,0 +1,260 @@
+<!-- Dialogs -->
+<div class="template" id="new-order-dialog">
+    <!-- New order dialog -->
+    <div class="modal fade resource modalDialog" id="newOrder" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" resource_type="dialog" resource_id="new_order_dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="RightSide">
+                        <p class="largeFont"><span class="t_word">new_loan</span> #<b class="resource" resource_type="information" resource_id="new_order_dialog_order_id"></b></p>
+                        <p class="comein"><span class="t_word">received</span>: <span class="resource" resource_type="information" resource_id="new_order_dialog_order_date"> </span></p>
+                    </div>
+
+                    <a><button type="button" class="btn btn-success aggree-button"><span class="t_word">take</span></button></a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</div>
+
+<div class="template" id="connection-lost-dialog">
+    <!-- New order dialog -->
+    <div class="modal fade resource modalDialog" id="connectionLost" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" resource_type="dialog" resource_id="connection_lost_dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="RightSide">
+                        <p class="largeFont connectionError">
+                            <span class="t_word">no_connection</span>
+                        </p>
+                    </div>
+
+                    <a>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                    </a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</div>
+
+<div class="template" id="deny-order-dialog">
+    <!-- Modal Deny-->
+    <div class="modal fade resource modalDialog" id="deny" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" resource_type="dialog" resource_id="deny_dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><span class="t_word">choose_order_reject_reason</span></h4>
+                </div>
+                <div class="modal-body">
+                    <form class="resource" resource_type="container" resource_id="reject-reasons-container">
+                        <p class="input">
+                            <textarea></textarea>
+                        </p>
+                        <p class="small"><span class="t_word">max_500_characters</span></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-reject reject-button">
+                        <span class="t_word">reject</span>
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                        <span class="t_word">cancel</span>
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="template" id="partly-satisfy-dialog">
+    <!-- Modal Part Satisfy-->
+    <div class="modal fade resource modalDialog" id="partsatisfy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" resource_type="dialog" resource_id="partly_satisfy_dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><span class="t_word">enter_amount_and_period</span></h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td><p class="small"><span class="t_word">order_amount</span></p>
+                                <input class="resource" resource_type="input" resource_id="partly_amount" type="text" value="1000" /><span><span class="t_word">rubles</span></span></td>
+                            <td>
+                                <p class="small"><span class="t_word">order_period</span></p>
+                                <input class="resource" resource_type="input" resource_id="partly_period" type="text" value="3" style="width: 100px;"/>
+                                <span>
+                                    <span class="t_word">genitive_days</span>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success partly-satisfy-button">
+                        <span class="t_word">satisfy</span>
+                    </button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        <span class="t_word">reject</span>
+                    </button>
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="template" id="satisfy-dialog">
+    <!-- Modal Satisfy-->
+    <div class="modal fade resource modalDialog" id="satisfy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" resource_type="dialog" resource_id="satisfy_dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><span class="t_word">approve_full?</span></h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success satisfy-button">
+                        <span class="t_word">yes</span>
+                    </button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="t_word">no</span></button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="template" id="camera-photo-dialog">
+    <!-- Modal Camera Photo-->
+    <div class="modal fade resource modalDialog" id="camera_photo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" resource_type="dialog" resource_id="camera_photo_dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="Position">
+                        <span class="Close"  data-dismiss="modal"><span class="t_word">close</span></span>
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="modal-head">
+                                <img class="resource" resource_type="image" resource_id="camera_image" src="" alt="" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="template" id="view-photos-dialog">
+    <!-- Modal Photo-->
+    <div class="modal fade resource modalDialog" id="view_photos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" resource_type="dialog" resource_id="view_photos_dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Position">
+                        <span class="OnLeft resource" resource_type="button" resource_id="rotate_left"><span class="t_word">90_degr_to_the_left</span></span>
+                        <span class="OnRight resource" resource_type="button" resource_id="rotate_right"><span class="t_word">90_degr_to_the_right</span></span>
+                        <span class="Close"  data-dismiss="modal"><span class="t_word">close</span></span>
+                    </div>
+                    <div class="dialog-photo-container">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="modal-head">
+                                    <img src="" alt="" class="resource" angle="0" resource_type="image" resource_id="modal_photo" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="template" id="alert-dialog">
+    <div class="modal fade modalDialog resource" resource_type="dialog" resource_id="alert_dialog" id="alert" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="RightSide">
+                        <p class="largeFont">
+                            <span class="message"></span>
+                        </p>
+                    </div>
+
+                    <button type="button" class="btn btn-success centered_button ok-button" data-dismiss="modal">OK</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+</div>
+
+<div class="template" id="confirm-dialog">
+    <div class="modal fade modalDialog resource" resource_type="dialog" resource_id="alert_dialog" id="confirm" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title message">#text#</h4>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="yes btn-success yes-button" data-dismiss="modal">Да</button>
+                    <button type="button" class="no btn-reject no-button" data-dismiss="modal">Нет</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div>
+    </div>
+</div>
+
+<div class="template" id="edit-points-group-dialog">
+    <div class="modal fade point_edit resource" resource_type="dialog" resource_id="edit_points_group_#id#" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" auto-hide="0">
+        <div class="wrapper">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Редактирование группы</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Название</p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control group_name" value="#name#" form_param_name="name" />
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="save save-button">Сохранить</button>
+                        <button type="button" class="cancel cancel-button" data-dismiss="modal">Отменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="release-notes-list-dialog">
+    <div class="modal fade release_notes resource" id="release-notes-list" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" resource_type="dialog" resource_id="release_notes_list_dialog">
+        <div class="wrapper">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            <span class="t_word">release_notes</span>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-12 col-sm-12 col-xs-12 left resource" resource_type="list" resource_id="release_notes_list" list_type="release_notes">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="yes" data-dismiss="modal"><span class="t_word">back</span></button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div><!-- /.modal -->
+</div>

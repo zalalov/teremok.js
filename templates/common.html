@@ -1,0 +1,1604 @@
+<!-- Common templates -->
+<div class="template" id="login">
+    <div class="container loginContainer center_wrapper resource" resource_type="page" resource_id="login">
+        <div class="center_in">
+            <div class="container loginContainer">
+                <div class="rus_eng resource" resource_type="container" resource_id="languages_container">
+                    <div class="resource" resource_type="list" resource_id="languages_list">
+                        <li class="resource" resource_type="list-item" resource_id="lang_en" value="en-US">
+                            <img src="res/themes/default/img/eng.jpg">
+                            <p>ENG</p>
+                        </li>
+                        <li class="resource" resource_type="list-item" resource_id="lang_ru" value="ru-RU">
+                            <img src="res/themes/default/img/rus.jpg">
+                            <p>RUS</p>
+                        </li>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="login_block resource" resource_type="container" resource_id="login_block">
+                    <h3><span class="t_word">authorization</span></h3>
+                    <div class="login">
+                        <div class="title"><span class="t_word">login</span></div>
+                        <input type="text" class="resource form-control" resource_id="login_enter_field" resource_type="input">
+                        <span data-alertid="login_alerts"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="password">
+                        <div class="title"><span class="t_word">password</span></div>
+                        <div>
+                            <input type="password" name="password" class="resource form-control" resource_id="password_enter_field" resource_type="input">
+                            <span data-alertid="login_alerts"></span>
+                        </div>
+                    </div>
+                    <button type="button" class="continue resource" resource_id="login_button" resource_type="button"><span class="t_word">continue</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="header">
+    <div class="row header resource" resource_type="container" resource_id="header_container">
+        <div class="col-xs-3 col-sm-3 col-md-3 logo">
+            <img class="img-responsive resource" src="" resource_type="image" resource_id="logo_image">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 user">
+            <div class="resource" resource_type="information" resource_id="user_role">
+                <span class="role value"><span class="t_word">agent</span></span><br>
+            </div>
+            <div class="resource" resource_type="information" resource_id="user_fio">
+                <span class="family value"></span>
+            </div>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 balance">
+            <span class="topic">
+                <span class="t_word">account_balance</span>
+            </span>
+            <br />
+            <div class="resource" resource_type="information" resource_id="balance_amount">
+                <span class="amount value"></span>
+            </div>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5">
+            <div class="col-xs-5 col-sm-6 col-md-6 notice">
+                <button type="button" data-toggle="modal" href="#release-notes-list" class="btn">
+                    <span class="t_word">release_notes</span>
+                </button>
+            </div>
+            <div class="col-xs-7 col-sm-6 col-md-6 posts">
+                <span>
+                    <span class="messages"><span class="t_word">total</span></span>
+                    <div class="resource" resource_type="information" resource_id="messages_count">
+                        <span class="all value">15 <span class="t_word">messages</span></span>
+                    </div>
+                </span>
+                <a href="#" title="" class="agent resource exit-link" resource_type="link" resource_id="logout"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="html_template" template_name="release-notes-list-dialog"></div>
+</div>
+
+<div class="template" id="main-menu">
+    <div class="row menu agent resource" resource_type="main-menu" resource_id="main_menu">
+        <ul class="nav nav-tabs">
+            <a class="summary main-menu-item" page="summary">
+                <span>
+                    <span class="t_word">summary</span>
+                </span>
+            </a>
+            <a class="employee main-menu-item" page="users">
+                <span>
+                    <span class="t_word">staff</span>
+                </span>
+            </a>
+            <a class="terminals_points main-menu-item" page="points">
+                <span>
+                    <span class="t_word">points_and_terminals</span>
+                </span>
+            </a>
+            <a class="news main-menu-item" page="messages">
+                <i class="resource" resource_type="index" resource_id="news_count_index">2</i>
+                <span>
+                    <span class="t_word">messages</span>
+                </span>
+            </a>
+            <a class="borrowers main-menu-item" page="clients">
+                <span>
+                    <span class="t_word">clients</span>
+                </span>
+            </a>
+            <a class="request main-menu-item" page="orders">
+                <span>
+                    <span class="t_word">orders</span>
+                </span>
+            </a>
+            <a class="rates main-menu-item" style="border-right: 0; " page="tariffs">
+                <span>
+                    <span class="t_word">tariffs</span>
+                </span>
+            </a>
+        </ul>
+
+    </div>
+</div>
+
+<div class="template" id="inspector-orders-history">
+    <div class="resource" resource_type="page" resource_id="orders-history">
+        <div class="wrapper">
+            <div class="header resource" resource_type="container" resource_id="header_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 rightline resource" resource_type="information" resource_id="inspector_name">
+                            <p class="name">
+                                <span class="title"><span class="t_word">inspector</span></span>
+                            </p>
+                            <p>
+                                <span class="value"></span>
+                                <span class="online resource" resource_type="indicator" resource_id="connection_indicator"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid resource" id="history_inspector" resource_type="container" resource_id="history_container">
+                <h3>
+                    <span><span class="t_word">history</span> / </span>
+                    <span class="resource" resource_type="information" resource_id="client_name"></span>
+                </h3>
+                <div class="resource" resource_type="container" resource_id="orders_list_container">
+                </div>
+            </div>
+        </div>
+        <div class="footer resource" resource_type="container" resource_id="footer_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" id="back_button_wrapper">
+                        <button type="button" class="btn btn-success resource" resource_type="button" resource_id="back_button">
+                            <span class="t_word">back</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="inspector-order-card">
+    <div class="resource" resource_type="page" resource_id="order-card">
+        <div class="wrapper">
+        <div class="header resource" resource_type="container" resource_id="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-default resource" resource_type="button" resource_id="orders_history">
+                            <span class="t_word">orders_history</span>
+                        </button>
+                    </div>
+                    <div class="col-md-2 rightline resource" resource_type="information" resource_id="inspector_name">
+                        <p class="name">
+                            <span class="title"><span class="t_word">inspector</span></span>
+                        </p>
+                        <p>
+                            <span class="value"></span>
+                            <span class="online resource" resource_type="indicator" resource_id="connection_indicator"></span>
+                        </p>
+                    </div>
+                    <div class="col-md-1 resource" resource_type="information" resource_id="order_id">
+                        <p class="name"><span class="t_word">order_id</span></p>
+                        <p class="value"></p>
+                    </div>
+                    <div class="col-md-2 resource" resource_type="information" resource_id="order_date">
+                        <p class="name"><span class="t_word">received</span></p>
+                        <p class="value"></p>
+                    </div>
+                    <div class="col-md-3 resource" resource_type="information" resource_id="point_info">
+                        <p class="name"><span class="t_word">point_info</span></p>
+                        <p class="value"></p>
+                    </div>
+                    <div class="col-md-2 rightline resource" resource_type="information" resource_id="point_balance">
+                        <p class="name"><span class="t_word">balance</span></p>
+                        <p class="value"></p>
+                    </div>
+                    <a class="signout resource exit-link" resource_type="link" resource_id="signout"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container medium resource" resource_type="container" resource_id="order_container">
+        <div class="row">
+        <div class="col-md-2 rightline">
+            <p class="line">
+                <span class="t_word">order_amount</span>
+            <p>
+            <p class="summ resource" resource_type="information" resource_id="amount">
+                <span class="value"></span>
+            </p>
+            <p class="line ">
+                <span class="t_word">term_of_loan</span>
+            <p>
+            <p class="summ resource" resource_type="information" resource_id="duration">
+                <span class="value"></span>
+            </p>
+            <p class="line">
+                <span class="t_word">rate</span>
+            <p>
+            <p class="date resource" resource_type="information" resource_id="rate">
+                <span class="value"></span>
+            </p>
+            <div class="credit_history">
+                <p class="status resource" resource_type="information" resource_id="credit_history_info">
+                    <span class="value"></span>
+                </p>
+            </div>
+            <button type="button" class="btn btn-default resource" resource_type="button" resource_id="client_card">
+                <span class="t_word">client</span>
+            </button>
+        </div>
+        <div class="col-md-6 mainInfo rightline">
+            <div class="resource hidden" resource_type="information" resource_id="name">
+                <p class="Borrow">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="sex">
+                <p class="line"><span class="t_word">sex</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="inn">
+                <p class="line"><span class="t_word">inn</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="birthday">
+                <p class="line"><span class="t_word">birthday_age</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="city">
+                <p class="line"><span class="t_word">birthplace</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_number">
+                <p class="line"><span class="t_word">passport_number</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_number">
+                <p class="line"><span class="t_word">passport_number</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_department">
+                <p class="line"><span class="t_word">passport_department</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_issue_place">
+                <p class="line"><span class="t_word">passport_issue_place</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_issue_date">
+                <p class="line"><span class="t_word">passport_issue_date</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_country">
+                <p class="line"><span class="t_word">country</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_city">
+                <p class="line"><span class="t_word">city</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_address">
+                <p class="line"><span class="t_word">address</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_date">
+                <p class="line"><span class="t_word">reg_date</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_department">
+                <p class="line"><span class="t_word">reg_department</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="job_company">
+                <p class="line"><span class="t_word">job_place</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="job_position">
+                <p class="line"><span class="t_word">job_position</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="job_phone">
+                <p class="line"><span class="t_word">job_phone</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="job_address">
+                <p class="line"><span class="t_word">job_address</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="address">
+                <p class="line"><span class="t_word">reg_address</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="guarantor_name">
+                <p class="line"><span class="t_word">guarantor_name</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="guarantor_phone">
+                <p class="line"><span class="t_word">guarantor_phone</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="fixed_phone">
+                <p class="line"><span class="t_word">fixed_phone</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="actual_address">
+                <p class="line"><span class="t_word">actual_address</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 resource" resource_type="container" resource_id="photos_container">
+            <div class="main_image_wrapper">
+                <div class="PhotoContainer resource" resource_type="container" resource_id="main_image_container">
+                    <div class="preloader preloaderBig resource" resource_type="preloader" resource_id="main_image_preloader"></div>
+                    <img src="" alt="" class="resource" resource_type="image" resource_id="main_image" />
+                    <div class="icon video resource" data-toggle="modal" data-target="#camera_photo" resource_type="button" resource_id="camera_button"></div>
+                    <div class="icon photo resource" data-toggle="modal" data-target="#view_photos" resource_type="button" resource_id="modal_photo_button"></div>
+                </div>
+            </div>
+            <div class="PhotoLine">
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="photo_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="photo_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="photo" />
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_photo_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_photo_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_photo"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_reg_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_reg_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_reg"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="signature_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="signature_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="signature"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="fingerprint_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="fingerprint_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="fingerprint"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_ir_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_ir_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_ir"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_photo_uv_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_photo_uv_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_photo_uv"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_reg_uv_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_reg_uv_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_reg_uv"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="second_document_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="second_document_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="second_document"/>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="footer resource" resource_type="container" resource_id="footer_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deny"><span class="t_word">reject</span></button>
+                    </div>
+                    <div class="col-md-5" style="padding-left: 15px;">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#partsatisfy"><span class="t_word">satisfy_partly</span></button>
+                    </div>
+                    <div class="col-md-4" style="padding-left: 15px;">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#satisfy"><span class="t_word">satisfy</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="html_template" template_name="deny-order-dialog"></div>
+        <div class="html_template" template_name="partly-satisfy-dialog"></div>
+        <div class="html_template" template_name="satisfy-dialog"></div>
+        <div class="html_template" template_name="camera-photo-dialog"></div>
+        <div class="html_template" template_name="view-photos-dialog"></div>
+    </div>
+</div>
+
+<div class="template" id="inspector-prev-order-card">
+    <div class="resource" resource_type="page" resource_id="prev-order-card">
+        <div class="wrapper">
+        <div class="header resource" resource_type="container" resource_id="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 rightline resource" resource_type="information" resource_id="inspector_name">
+                        <p class="name">
+                            <span class="title"><span class="t_word">inspector</span></span>
+                        </p>
+                        <p>
+                            <span class="value"></span>
+                            <span class="online resource" resource_type="indicator" resource_id="connection_indicator"></span>
+                        </p>
+                    </div>
+                    <div class="col-md-1 resource" resource_type="information" resource_id="order_id">
+                        <p class="name"><span class="t_word">order_id</span></p>
+                        <p class="value"></p>
+                    </div>
+                    <div class="col-md-2 resource" resource_type="information" resource_id="order_date">
+                        <p class="name"><span class="t_word">received</span></p>
+                        <p class="value"></p>
+                    </div>
+                    <div class="col-md-3 resource" resource_type="information" resource_id="point_info">
+                        <p class="name"><span class="t_word">point_info</span></p>
+                        <p class="value"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container medium resource" resource_type="container" resource_id="order_container">
+        <div class="row">
+        <div class="col-md-2 rightline">
+            <p class="line">
+                <span class="t_word">order_amount</span>
+            <p>
+            <p class="summ resource" resource_type="information" resource_id="amount">
+                <span class="value"></span>
+            </p>
+            <p class="line ">
+                <span class="t_word">term_of_loan</span>
+            <p>
+            <p class="summ resource" resource_type="information" resource_id="duration">
+                <span class="value"></span>
+            </p>
+            <p class="line">
+                <span class="t_word">rate</span>
+            <p>
+            <p class="date resource" resource_type="information" resource_id="rate">
+                <span class="value"></span>
+            </p>
+        </div>
+        <div class="col-md-6 mainInfo rightline">
+            <div class="resource hidden" resource_type="information" resource_id="name">
+                <p class="Borrow">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="sex">
+                <p class="line"><span class="t_word">sex</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="inn">
+                <p class="line"><span class="t_word">inn</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="birthday">
+                <p class="line"><span class="t_word">birthday_age</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="city">
+                <p class="line"><span class="t_word">birthplace</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_number">
+                <p class="line"><span class="t_word">passport_number</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_number">
+                <p class="line"><span class="t_word">passport_number</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_department">
+                <p class="line"><span class="t_word">passport_department</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_issue_place">
+                <p class="line"><span class="t_word">passport_issue_place</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_issue_date">
+                <p class="line"><span class="t_word">passport_issue_date</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_country">
+                <p class="line"><span class="t_word">country</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_city">
+                <p class="line"><span class="t_word">city</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_address">
+                <p class="line"><span class="t_word">address</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_date">
+                <p class="line"><span class="t_word">reg_date</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="passport_reg_department">
+                <p class="line"><span class="t_word">reg_department</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="job_company">
+                <p class="line"><span class="t_word">job_place</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="job_position">
+                <p class="line"><span class="t_word">job_position</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="job_phone">
+                <p class="line"><span class="t_word">job_phone</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="job_address">
+                <p class="line"><span class="t_word">job_address</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="address">
+                <p class="line"><span class="t_word">reg_address</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="guarantor_name">
+                <p class="line"><span class="t_word">guarantor_name</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="guarantor_phone">
+                <p class="line"><span class="t_word">guarantor_phone</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="fixed_phone">
+                <p class="line"><span class="t_word">fixed_phone</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+
+            <div class="resource hidden" resource_type="information" resource_id="actual_address">
+                <p class="line"><span class="t_word">actual_address</span><p>
+                <p class="date">
+                    <span class="value"></span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 resource" resource_type="container" resource_id="photos_container">
+            <div class="main_image_wrapper">
+                <div class="PhotoContainer resource" resource_type="container" resource_id="main_image_container">
+                    <div class="preloader preloaderBig resource" resource_type="preloader" resource_id="main_image_preloader"></div>
+                    <img src="" alt="" class="resource" resource_type="image" resource_id="main_image" />
+                    <div class="icon photo resource" data-toggle="modal" data-target="#view_photos" resource_type="button" resource_id="modal_photo_button"></div>
+                </div>
+            </div>
+            <div class="PhotoLine">
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="photo_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="photo_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="photo" />
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_photo_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_photo_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_photo"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_reg_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_reg_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_reg"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="signature_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="signature_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="signature"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="fingerprint_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="fingerprint_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="fingerprint"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_ir_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_ir_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_ir"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_photo_uv_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_photo_uv_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_photo_uv"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_reg_uv_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_reg_uv_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_reg_uv"/>
+                </div>
+                <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="second_document_container">
+                    <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="second_document_preloader"></div>
+                    <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="second_document"/>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="footer resource" resource_type="container" resource_id="footer_container">
+            <div class="container">
+                <div class="row">
+                    <div id="back_button_wrapper" class="col-md-6">
+                        <button type="button" class="btn btn-success resource" resource_type="button" resource_id="back_to_order_card">
+                            <span class="t_word">back</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="html_template" template_name="view-photos-dialog" />
+        <div class="html_template" template_name="camera-photo-dialog" />
+    </div>
+</div>
+
+<div class="template" id="inspector-client-card">
+    <div class="resource" resource_type="page" resource_id="client-card">
+        <div class="wrapper">
+    <div class="header resource" resource_type="container" resource_id="header_container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 rightline resource" resource_type="information" resource_id="inspector_name">
+                    <p class="name">
+                        <span class="title"><span class="t_word">inspector</span></span>
+                    </p>
+                    <p>
+                        <span class="value"></span>
+                        <span class="online resource" resource_type="indicator" resource_id="connection_indicator"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container medium resource" resource_type="container" resource_id="order_container">
+    <div class="row">
+    <div class="col-md-2 rightline">
+        <p class="line">
+            <span class="t_word">order_amount</span>
+        <p>
+        <p class="summ resource" resource_type="information" resource_id="amount">
+            <span class="value"></span>
+        </p>
+        <p class="line ">
+            <span class="t_word">term_of_loan</span>
+        <p>
+        <p class="summ resource" resource_type="information" resource_id="duration">
+            <span class="value"></span>
+        </p>
+        <p class="line">
+            <span class="t_word">rate</span>
+        <p>
+        <p class="date resource" resource_type="information" resource_id="rate">
+            <span class="value"></span>
+        </p>
+        <div class="credit_history">
+            <p class="status resource" resource_type="information" resource_id="credit_history_info">
+                <span class="value"></span>
+            </p>
+        </div>
+    </div>
+    <div class="col-md-6 mainInfo rightline">
+        <div class="resource hidden" resource_type="information" resource_id="name">
+            <p class="Borrow">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="sex">
+            <p class="line"><span class="t_word">sex</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="inn">
+            <p class="line"><span class="t_word">inn</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="birthday">
+            <p class="line"><span class="t_word">birthday_age</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="city">
+            <p class="line"><span class="t_word">birthplace</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_number">
+            <p class="line"><span class="t_word">passport_number</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_number">
+            <p class="line"><span class="t_word">passport_number</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_department">
+            <p class="line"><span class="t_word">passport_department</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_issue_place">
+            <p class="line"><span class="t_word">passport_issue_place</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_issue_date">
+            <p class="line"><span class="t_word">passport_issue_date</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_reg_country">
+            <p class="line"><span class="t_word">country</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_reg_city">
+            <p class="line"><span class="t_word">city</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_reg_address">
+            <p class="line"><span class="t_word">address</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_reg_date">
+            <p class="line"><span class="t_word">reg_date</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="passport_reg_department">
+            <p class="line"><span class="t_word">reg_department</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="job_company">
+            <p class="line"><span class="t_word">job_place</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="job_position">
+            <p class="line"><span class="t_word">job_position</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="job_phone">
+            <p class="line"><span class="t_word">job_phone</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="job_address">
+            <p class="line"><span class="t_word">job_address</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="address">
+            <p class="line"><span class="t_word">reg_address</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="guarantor_name">
+            <p class="line"><span class="t_word">guarantor_name</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="guarantor_phone">
+            <p class="line"><span class="t_word">guarantor_phone</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="fixed_phone">
+            <p class="line"><span class="t_word">fixed_phone</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="actual_address">
+            <p class="line"><span class="t_word">actual_address</span><p>
+            <p class="date">
+                <span class="value"></span>
+            </p>
+        </div>
+    </div>
+    <div class="col-md-4 resource" resource_type="container" resource_id="photos_container">
+        <div class="main_image_wrapper">
+            <div class="PhotoContainer resource" resource_type="container" resource_id="main_image_container">
+                <div class="preloader preloaderBig resource" resource_type="preloader" resource_id="main_image_preloader"></div>
+                <img src="" alt="" class="resource" resource_type="image" resource_id="main_image" />
+                <div class="icon photo resource" data-toggle="modal" data-target="#view_photos" resource_type="button" resource_id="modal_photo_button"></div>
+            </div>
+        </div>
+        <div class="PhotoLine">
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="photo_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="photo_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="photo" />
+            </div>
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_photo_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_photo_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_photo"/>
+            </div>
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_reg_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_reg_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_reg"/>
+            </div>
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="signature_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="signature_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="signature"/>
+            </div>
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="fingerprint_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="fingerprint_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="fingerprint"/>
+            </div>
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_ir_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_ir_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_ir"/>
+            </div>
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_photo_uv_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_photo_uv_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_photo_uv"/>
+            </div>
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="passport_reg_uv_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="passport_reg_uv_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="passport_reg_uv"/>
+            </div>
+            <div class="miniphoto miniphotoWrapper resource" resource_type="container" resource_id="second_document_container">
+                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="second_document_preloader"></div>
+                <img class="miniphoto resource" src="" alt="" resource_type="preview" resource_id="second_document"/>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+        <div class="footer resource" resource_type="container" resource_id="footer_container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="back_button_wrapper">
+                    <button type="button" class="btn btn-success resource" resource_type="button" resource_id="back_to_order_card">
+                        <span class="t_word">back</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="html_template" template_name="view-photos-dialog" />
+        <div class="html_template" template_name="camera-photo-dialog" />
+    </div>
+</div>
+
+<div class="template" id="inspector-desktop">
+    <div class="resource" resource_type="page" resource_id="desktop">
+        <div class="wrapper">
+            <div class="header resource" resource_type="container" resource_id="header_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 rightline resource" resource_type="information" resource_id="inspector_name">
+                            <p class="name">
+                                <span class="title"><span class="t_word">inspector</span></span>
+                            </p>
+                            <p>
+                                <span class="value"></span>
+                                <span class="offline resource" resource_type="indicator" resource_id="connection_indicator"></span>
+                            </p>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-default resource hidden" resource_type="button" resource_id="connect_button">
+                                <span class='t_word'>connect</span>
+                            </button>
+                        </div>
+                        <div class="col-md-2 notice">
+                            <button type="button" data-toggle="modal" href="#release-notes-list" class="btn">
+                                <span class="t_word">release_notes</span>
+                            </button>
+                        </div>
+                        <a class="signout resource exit-link" resource_type="link" resource_id="signout"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="html_template" template_name="new-order-dialog" />
+
+            <div class="html_template" template_name="connection-lost-dialog" />
+        </div>
+    </div>
+</div>
+
+<div class="template" id="summary-page">
+    <div class="resource" resource_type="page" resource_id="summary">
+        <div class="page">
+            <div class="html_template" template_name="summary-block"></div>
+            <div class="html_template" template_name="statical-distribution-block"></div>
+            <div class="html_template" template_name="dynamics-block"></div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="summary-block">
+    <div class="rubric row">
+        <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3>
+                    <span class="t_word">summary</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div id="summary" class="row">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-8 left same">
+                <div class="block row column" style="height: 273px;">
+                    <div class="col-md-6 col-sm-6 col-xs-6 border left ">
+                        <div class="topic col-md-12 col-sm-12 col-xs-12">
+                            <span class="t_word">money_resources</span>
+                        </div>
+                        <div class="balance col-md-12 col-sm-12 col-xs-12 resource" resource_type="information" resource_id="gross_profit_value">
+                            <span class="value"><span class="t_word">no_data</span></span><br>
+                            <span class="t_word lower_case">gross_profit</span>
+                        </div>
+                        <div class="grey_bg col-md-12 col-sm-12 col-xs-12 padding">
+                            <span class="t_word">cash</span>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                            <div class="col-md-8 col-sm-8 col-xs-8 padding">
+                                <span class="t_word lower_case">dispensers</span>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 padding amt resource" resource_type="information" resource_id="dispensers_money_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8 padding">
+                                <span class="t_word lower_case">bill_acceptors</span>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 padding amt resource" resource_type="information" resource_id="billacceptors_money_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 right">
+                        <div class="topic col-md-12 col-sm-12 col-xs-12">
+                            <span class="t_word">borrowings</span>
+                        </div>
+                        <div class="padding col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-6 ">
+                                <span class="t_word">issued</span>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 amt resource" resource_type="information" resource_id="issued_money_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                        </div>
+                        <div class="padding grey_bg col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-6 ">
+                                <span class="t_word">returned</span>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 amt green resource" resource_type="information" resource_id="returned_money_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                            <div class="col-md-8 col-sm-8 col-xs-8 padding">
+                                <span class="t_word lower_case">borrowed_funds</span>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 padding amt resource" resource_type="information" resource_id="returned_borrowed_funds_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8 padding">
+                                <span class="t_word">%_of_orders</span>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 padding amt resource" resource_type="information" resource_id="returned_percents_of_orders_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                        </div>
+                        <div class="padding grey_bg col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-6 ">
+                                <span class="t_word">debt</span>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 amt red resource" resource_type="information" resource_id="debt_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                            <div class="col-md-8 col-sm-8 col-xs-8 padding">
+                                <span class="t_word">borrowed_funds</span>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 padding amt resource" resource_type="information" resource_id="debt_borrowed_funds_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 lspci col-xs-8 padding">
+                                <span class="t_word">%_of_orders</span>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 padding amt resource" resource_type="information" resource_id="debt_percents_of_orders_value">
+                                <span class="value"><span class="t_word">no_data</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 right same">
+                <div class="block row clientage column" style="height: 273px;">
+                    <div class="topic col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-6 col-xs-6 col-sm-6"><span class="t_word">clients</span></div>
+                        <div class="col-md-6 col-xs-6 col-sm-6 span resource" resource_type="information" resource_id="total_clients_count">
+                            <span class="t_word">totally</span>
+                            <span class="value"><span class="t_word">no_data</span></span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <span class="t_word">phones_in_base</span>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 amt resource" resource_type="information" resource_id="phones_in_base_value">
+                            <span class="value"><span class="t_word">no_data</span></span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <span class="t_word">avg_order_amount</span>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 amt resource" resource_type="information" resource_id="avg_order_amount_value">
+                            <span class="value"><span class="t_word">no_data</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 block">
+            <div class="col-md-7 col-sm-7 col-xs-7 border left">
+                <div class="topic col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-xs-6 col-sm-6"><span class="t_word">orders</span></div>
+                    <div class="col-md-6 col-xs-6 col-sm-6 span resource" resource_type="information" resource_id="total_orders_count">
+                        <span class="t_word">totally</span>
+                        <span class="value"><span class="t_word">no_data</span></span>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5 border left">
+                    <div class="live red col-md-12 col-sm-12 col-xs-12">● <span>LIVE</span></div>
+                    <div class="dealing col-md-12 col-sm-12 col-xs-12 border_bottom_with resource" resource_type="information" resource_id="orders_in_progress_value">
+                        <span class="value"><span class="t_word">no_data</span></span><br>
+                        <span class="t_word lower_case">orders_in_process</span>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding amt">
+                            <span class="t_word">total_today</span>:
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding amt grey resource" resource_type="information" resource_id=today_orders_value>
+                            <span class="value"><span class="t_word">no_data</span></span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding amt">
+                            <span class="t_word">yesterday</span>:
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding amt grey resource" resource_type="information" resource_id="yesterday_orders_value">
+                            <span class="value"><span class="t_word">no_data</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-7 border percentage right">
+                    <div class="row padding">
+                        <div class="col-md-5 col-sm-5 col-xs-5 sum resource" resource_type="information" resource_id="approved_orders_value">
+                            <span class="big value"><span class="t_word">no_data</span></span><br><span class="t_word lower_case">approved_orders</span>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7 line resource" style="margin-top: 56px;" resource_type="line" resource_id="approved_orders_percents_value">
+                            <span class="progress_bar" style="width: 63%"></span><i class="line_value">63 %</i>
+                        </div>
+                    </div>
+                    <div class="row padding border_bottom_with">
+                        <div class="col-md-5 col-sm-5 col-xs-5 sum resource" resource_type="information" resource_id="rejected_orders_value">
+                            <span class="value"><span class="t_word">no_data</span></span><br><span class="t_word lower_case">rejected</span>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7 line resource" resource_type="line" resource_id="rejected_orders_percents_value">
+                            <span class="progress_bar" style="width: 34%"></span><i class="line_value">34 %</i>
+                        </div>
+                    </div>
+                    <div class="row padding">
+                        <div class="col-md-5 col-sm-5 col-xs-5 sum resource" resource_type="information" resource_id="rejected_by_self_value">
+                            <span class="value"><span class="t_word">no_data</span></span><br><span class="t_word lower_case">rejected_by_self</span>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7 line resource" resource_type="line" resource_id="rejected_by_self_percents_value">
+                            <span class="progress_bar" style="width: 12%"></span><i class="line_value">12 %</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-5 col-xs-5 border right">
+                <div class="topic col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-xs-6 col-sm-6"><span class="t_word">loans</span></div>
+                    <div class="col-md-6 col-xs-6 col-sm-6 span resource" resource_type="information" resource_id="loans_total_value">
+                        <span class="t_word">totally</span>
+                        <span class="value"><span class="t_word">no_data</span></span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 percentage right">
+                    <div class="row padding">
+                        <div class="col-md-12 col-sm-12 col-xs-12 sum resource" resource_type="information" resource_id="active_orders_value">
+                            <span class="big value"><span class="t_word">no_data</span></span>
+                            <br>
+                            <span class="t_word lower_case">active_orders</span>
+                        </div>
+                    </div>
+                    <div class="row padding border_bottom_with">
+                        <div class="col-md-5 col-sm-5 col-xs-5 sum resource" resource_type="information" resource_id="overdued_orders_value">
+                            <span class="red value"><span class="t_word">no_data</span></span><br><span class="t_word lower_case">overdued</span>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7 line resource" resource_type="line" resource_id="overdued_orders_percents_value">
+                            <span class="progress_bar" style="width: 12%"></span>
+                            <i class="line_value">12 %</i>
+                        </div>
+                    </div>
+                    <div class="row padding">
+                        <div class="col-md-5 col-sm-5 col-xs-5 sum resource" resource_type="information" resource_id="repaid_orders_value">
+                            <span class="green value"><span class="t_word">no_data</span></span>
+                            <br>
+                            <span class="t_word lower_case">repaid</span>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7 line resource" resource_type="line" resource_id="repaid_orders_percents_value">
+                            <span class="progress_bar" style="width: 31%"></span>
+                            <i class="line_value">31 %</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4 left ">
+                <div class="block col-md-12 col-sm-12 col-xs-12 trial column2" style="height: 204px;">
+                    <div class="topic col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-6 col-xs-6 col-sm-6"><span class="t_word">courts</span></div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <span class="t_word">in_court</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 amt resource" resource_type="information" resource_id="in_court_value">
+                            <span class="value"><span class="t_word">no_data</span></span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                        <div class="col-md-6 col-sm-6 col-xs-6 normal">
+                            <span class="t_word">to_amount_of</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 red amt normal resource" resource_type="information" resource_id="in_court_to_amount_of_value">
+                            <span class="value"><span class="t_word">no_data</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8 right ">
+                <div class="block col-md-12 col-sm-12 col-xs-12 reference column2" style="height: 199px;">
+                    <div class="topic col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-xs-12 col-sm-12">
+                            <span class="t_word">reference</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="statical-distribution-block">
+    <div class="rubric row">
+        <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><span class="t_word">statical_distribution</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="distribution">
+        <div class="col-md-6 col-sm-6 col-xs-6 left">
+            <div class="col-md-12 col-sm-12 col-xs-12 block">
+                <div class="index"><span class="t_word">number_of_loans_per_person</span></div>
+                <div class="col-md-9 col-sm-9 col-xs-9 resource" id="orders_to_clients_graph" resource_type="graph" resource_id="orders_to_clients_graph"></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 right">
+            <div class="col-md-12 col-sm-12 col-xs-12 block">
+                <div class="index"><span class="t_word">order_amount_rub</span></div>
+                <div class="col-md-9 col-sm-9 col-xs-9 resource" id="clients_to_amounts_graph" resource_type="graph" resource_id="clients_to_amounts_graph"></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 left">
+            <div class="col-md-12 col-sm-12 col-xs-12 block">
+                <div class="index"><span class="t_word">overdue_days</span></div>
+                <div class="col-md-9 col-sm-9 col-xs-9 resource" id="clients_to_periods_graph" resource_type="graph" resource_id="clients_to_periods_graph"></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 right">
+            <div class="col-md-12 col-sm-12 col-xs-12 block">
+                <div class="index"><span class="t_word">overdue_orders</span></div>
+                <div class="col-md-9 col-sm-9 col-xs-9 resource" id="clients_to_exp_orders_graph" resource_type="graph" resource_id="clients_to_exp_orders_graph"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="dynamics-block">
+    <div class="rubric row">
+        <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><span class="t_word">dynamics</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="distribution">
+        <div class="col-md-12 col-sm-12 col-xs-12 block">
+            <div class="index">
+                <div class="col-lg-8 col-md-7 col-sm-6 col-xs-6"><span class="t_word">dynamics_of_number_of_loans</span></div>
+            </div>
+            <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-6 col-sm-6 col-xs-6 form-inline resource" resource_type="form" resource_id="dynamics_graph_filter_form">
+                <input class="form-control resource form-param" type="date" resource_type="date" resource_id="dynamics_graph_from_date" form_param_name="from" default_value="week_ago" />
+                <input class="form-control hidden resource" type="month" resource_type="date" resource_id="dynamics_graph_from_date_month_type" form_param_name="from" default_value="month_ago" />
+                <span class="separator"> - </span>
+                <input class="form-control resource form-param" type="date" resource_type="date" resource_id="dynamics_graph_to_date" form_param_name="to" default_value="today" />
+                <input class="form-control hidden resource" type="month" resource_type="date" resource_id="dynamics_graph_to_date_month_type" form_param_name="to" default_value="today" />
+                <select class="form-control resource form-param" resource_type="select-box" resource_id="dynamics_graph_scale" form_param_name="scale">
+                    <option value="day" class="t_word_in_option">day</option>
+                    <option value="month" class="t_word_in_option">month</option>
+                </select>
+                <input class="form-control resource" type="hidden" resource_type="input" resource_id="dynamics_graph_point_id" form_param_name="point_id" />
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9 resource" id="dynamics_graph" resource_type="graph" resource_id="dynamics_graph"></div>
+            <div class="resource" resource_type="container" resource_id="dynamics_graph_point_details"></div>
+            <div class="col-md-9 col-sm-9 col-xs-9 resource error-message-container" resource_type="container" resource_id="dynamics_graph_error_message">
+                <span class="error_message_text">
+                    <p>Выбран неправильный интервал.</p>
+                    <p>Укажите интервал от 1 до 120 месяцев</p>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="dynamics-graph-point-details">
+    <div class="col-md-3 col-sm-3 col-xs-3 right resource" resource_type="container" resource_id="detalization_graph_point_details">
+        <div class="block row clientage column">
+            <div class="topic col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">#date#</div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                <div class="col-md-8 col-sm-8 col-xs-8 nopadding">
+                    Вход
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 amt">
+                    <span class="value" style="float: right">#amount_in# руб.</span>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 border_with padding">
+                <div class="col-md-8 col-sm-8 col-xs-8 nopadding">
+                    Выход
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 amt">
+                    <span class="value" style="float: right">#amount_out# руб.</span>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12  border_bottom_with padding">
+                <div class="col-md-8 col-sm-8 col-xs-8 nopadding">
+                    Проценты
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 amt">
+                    <span class="value" style="float: right">#amount_percent# руб.</span>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 padding">
+                <div class="col-md-8 col-sm-8 col-xs-8 nopadding">
+                    Штрафные проценты
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 amt">
+                    <span class="value" style="float: right">#amount_penalty# руб.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="users-page">
+    <div class="resource" resource_type="page" resource_id="users">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h3>Сотрудники</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row cooperator">
+            <div class="col-md-9 col-sm-9 col-xs-9 left resource" resource_type="list" resource_id="users_list" list_type="users">
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 add">
+                <button class="resource" resource_type="button" resource_id="new_user_button">Добавить сотрудника</button>
+                <p>У вас новый сотрудник? Создайте для него учетную запись, чтобы он мог работать в системе.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="points-page">
+    <div class="resource" resource_type="page" resource_id="points">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row points_terminals">
+            <div class="col-md-9 col-sm-9 col-xs-9 available resource" resource_type="list" resource_id="points_list" list_type="points"></div>
+            <div class="col-md-3 col-sm-3 col-xs-3 add_point">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <button class="resource" resource_type="button" resource_id="add_new_item">
+                        <span class="t_word">add_point_to_the_base</span>
+                    </button>
+                    <p><span class="t_word">you_can_add_point_and_group_it</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="html_template" template_name="edit-points-group-dialog"></div>
+    </div>
+</div>
+
+<div class="template" id="messages-page">
+    <div class="resource" resource_type="page" resource_id="messages">
+        <div class="container-fluid ">
+            <div class="rubric row">
+                <div class="col-md-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h3><span class="t_word">messages</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row resource" id="messages" resource_type="list" resource_id="messages_list" list_type="messages"></div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="clients-page">
+    <div class="resource" resource_type="page" resource_id="clients">
+        <div class="row tabs">
+            <a class="col-md-2 col-sm-2 col-xs-2 inactive" href="#">
+                <span class="t_word">analytics</span>
+            </a>
+            <a class="col-md-2 col-sm-2 col-xs-2 active" href="#">
+                <span class="t_word">borrowers_list</span>
+            </a>
+        </div>
+        <div class="row scroll">
+            <div class="col-md-8 col-sm-8 col-xs-8 resource" id="found" resource_type="list" resource_id="clients_list" list_type="clients">
+                <div class="col-md-12 col-sm-12 col-xs-12 top">
+                    <h3 class="col-md-12 col-sm-12 col-xs-12">
+                        <span class="t_word">clients_count</span>:
+                    <span class="resource" resource_type="information" resource_id="clients_count">
+                        <span class="value"></span>
+                    </span>
+                    </h3>
+                </div>
+            </div>
+
+            <!-- FILTER -->
+            <div class="html_template" template_name="clients-list-filter"></div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="orders-page">
+    <div class="resource" resource_type="page" resource_id="orders">
+        <!-- LIST HEADER -->
+        <div class="row tabs">
+            <a class="col-md-2 col-sm-2 col-xs-2 inactive" href="#">Аналитика</a>
+            <a class="col-md-2 col-sm-2 col-xs-2 active" href="#">Список заявок</a>
+        </div>
+
+        <!-- LIST -->
+        <div class="row scroll">
+            <div class="col-md-8 col-sm-8 col-xs-7 resource" id="found" resource_type="list" resource_id="orders_list" list_type="orders">
+                <div class="col-md-12 col-sm-12 col-xs-12 top">
+                    <h3 class="col-md-12 col-sm-12 col-xs-12">Найдено достаточно заявок</h3>
+                </div>
+            </div>
+
+            <!-- FILTER -->
+            <div class="html_template" template_name="orders-list-filter"></div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="tariffs-page">
+    <div class="resource" resource_type="page" resource_id="tariffs">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12 ">
+                    <h3>Тарифы</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row tariffs_list">
+            <div class="col-xs-9 left">
+                <div class="resource" id="found" resource_type="list" resource_id="tariffs_list" list_type="tariffs"></div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 add_tariff">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <button class="resource" resource_type="button" resource_id="add_new_item" datatype="tariff">Добавить тариф</button>
+                    <p>Вы можете добавить новый тариф, чтобы Вашим клиентам было из чего выбирать.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

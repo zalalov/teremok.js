@@ -1,0 +1,357 @@
+<!-- List item's -->
+<div class="template" id="points-group-list-item">
+    <div class="col-md-12 col-sm-12 col-xs-12 area resource list-item border_bottom group-list-item" resource_type="list-item" resource_id="point_group_#id#" item_id="#id#" datatype="points-group">
+        <div class="col-md-11 col-sm-11 col-xs-11 name">
+            #name#
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1 edit">
+            <button class="edit edit-button"></button>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="points-list-item">
+    <a class="col-md-12 col-sm-12 col-xs-12 info list-item border_bottom resource" resource_type="list-item" resource_id="point_#id#" item_id="#id#" datatype="point">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <strong>#address#</strong><br />
+            <span><span class="t_word">terminal</span> №#id#</span>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6 ">
+            <span><span class="t_word">issue_of_loans</span></span><br />
+            #schedule#
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <span><span class="t_word">bill_acceptors</span>:</span><br />
+            <b class="value">#amount_in# р.</b>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6 ">
+            <span><span class="t_word">dispensers</span>:</span><br />
+            <b>#amount_out# р.</b>
+        </div>
+    </a>
+</div>
+
+<div class="template" id="point-tariffs-list-item">
+    <div class="col-md-6 col-sm-6 col-xs-6 resource" resource_type="list-item" resource_id="tariff_#id#" item_id="#id#" datatype="tariff">
+        <input type="checkbox" id="tariff_#id#" name="tariff_#id#">
+        <label for="tariff_#id#">#name#</label>
+    </div>
+</div>
+
+<div class="template" id="users-list-item">
+    <a class="list-item border_bottom resource" resource_type="list-item" resource_id="user_#id#" item_id="#id#" datatype="user">
+        <div class="col-md-12 col-sm-12 col-xs-12 bold">#fio#</div>
+        <div class="col-md-4 col-sm-6 col-xs-12"><span><span class="t_word">phone_short</span>: </span>#phone#</div>
+        <div class="col-md-8 col-sm-6 col-xs-12"><span><span class="t_word">mode</span>.: </span>#schedule#</div>
+    </a>
+</div>
+
+<div class="template" id="user-roles-list-item">
+    <div class="html_template" template_name="roles-list-item" />
+</div>
+
+<div class="template" id="roles-list-item">
+    <div class="col-sm-6 col-xs-12 resource" resource_type="list-item" resource_id="role_#id#" item_id="#id#" datatype="role">
+        <input type="checkbox" id="role_#id#" name="role_#id#">
+        <label for="role_#id#">#title#</label>
+    </div>
+</div>
+
+<div class="template" id="user-points-list-item">
+    <div class="resource" resource_type="list-item" resource_id="point_#id#" item_id="#id#" datatype="point">
+        <div class="col-sm-6 col-xs-12">
+            <input type="checkbox" id="point_#id#" name="point_#id#">
+            <label for="point_#id#">#address#</label>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="point-users-list-item">
+    <div class="col-md-12 col-xs-12 col-sm-12 nopadding resource" resource_type="list-item" resource_id="point_user_#id#" item_id="#id#" datatype="user">
+        <input type="checkbox" id="user_#id#" name="user_#id#">
+        <label for="user_#id#">#fio#</label>
+    </div>
+</div>
+
+<div class="template" id="point-groups-list-item">
+    <div class="col-md-12 col-xs-12 col-sm-12 resource" resource_type="list-item" resource_id="point_group_#id#" item_id="#id#" datatype="point-group">
+        <input type="radio" id="point_group_#id#" name="point_group" value="#id#">
+        <label for="point_group_#id#">#name#</label><br><br>
+    </div>
+</div>
+
+<div class="template" id="clients-list-item">
+    <a class="col-md-12 col-sm-12 col-xs-12 stroke list-item border_bottom resource" resource_type="list-item" resource_id="client_#id#" item_id="#id#" datatype="client">
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <strong>#full_name#</strong>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <span class="t_word">phone_short</span>: <span>#phone#</span>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <a class="col-md-12 col-sm-12 col-xs-12 stroke" style="border-bottom: 0;">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-md-12 col-sm-12 col-xs-12"><span>27&nbsp;августа,&nbsp;15:44</span>&nbsp;- 2&nbsp;сентября&nbsp;(6&nbsp;дней)</div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">Сумма: <span>5 000 р.</span></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">Переплата: <span>750 р.</span></div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <span class="green">Удовлетворена</span><br>
+                    Адрес: <span class="grey">ул. Петербургская, д. 52</span>
+                </div>
+            </a>
+            <span class="t_word">inn</span>: <span>#inn#</span>
+        </div>
+    </a>
+</div>
+
+<div class="template" id="orders-list-item">
+    <a class="col-md-12 col-sm-12 col-xs-12 stroke list-item border_bottom resource" resource_type="list-item" resource_id="order_#id#" item_id="#id#" datatype="order">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="col-md-12 col-sm-12 col-xs-12"><span>#created_at# <span class="bold">(##id#)</span></span></div>
+            <div class="col-md-6 col-sm-6 col-xs-6"><span class="t_word">amount</span>: <span>#amount# <span class="t_word lower_case">rubles</span></span></div>
+            <div class="col-md-6 col-sm-6 col-xs-6"><span class="t_word">rate</span>: <span>#accrued_interest# руб.</span></div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <span >#status_word#</span><br>
+            <span class="t_word">address</span>: <span class="grey">#address#</span>
+        </div>
+    </a>
+</div>
+
+<div class="template" id="tariffs-list-item">
+    <div class="col-md-12 col-sm-12 col-xs-12 stroke list-item border_bottom resource tariff" resource_type="list-item" resource_id="tariff_#id#" item_id="#id#" datatype="tariff">
+        <div class="all col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12 name">
+                <b>#name#</b> #date_from_to#
+            </div>
+            <!--div class="col-md-2 col-sm-6 col-xs-6 alignRight">
+                Заявок: <i>512</i>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6 alignRight">
+                Клиентов: <i>108</i>
+            </div-->
+            <div class="terms col-xs-12">
+                <div class="col-sm-12 col-xs-12">
+                    Сумма: <span>#amount_min# – #amount_max# р.</span>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    Срок: <span>#period_min# – #period_max# дн.</span>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    Процент: <span class="green">#rate#% в день</span>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    Беспроцентный период: <span>#skip_days# дн.</span>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    Комиссия за выдачу: <span>#fee# р.</span>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    Штрафная комиссия: <span>#penalty_fee# р.</span>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    Штрафные проценты: <span class="red">#penalty_rate#% в день</span>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    Беспроцентный штрафной период: <span>#skip_penalty_days# день</span>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    Штрафной период: <span>#penalty_period# дн.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="release-notes-list-item">
+    <div class="row resource release-item list-item border_bottom" resource_type="list-item" resource_id="release_notes_#id#" item_id="#id#" datatype="release-note">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-2 col-sm-2 col-xs-2 list-item-header">
+                <span class="version">#version#</span>
+                <br />
+                <span class="date">#date#</span>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-10 list-item-body">#changes#</div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="order-operations-list-item">
+    <div class="html_template" template_name="operations-list-item" />
+</div>
+
+<div class="template" id="operations-list-item">
+    <div class="operation resource list-item border_bottom" resource_type="list-item" resource_id="order_operation_#id#" item_id="#id#" datatype="operation">
+        <div class="type">#type_word#</div>
+        <div class="date">#created_at#</div>
+        <div class="sum">#amount# р.</div>
+        <div class="address">Терминал ##point_id#</div>
+    </div>
+</div>
+
+<div class="template" id="messages-list-item">
+    <div class="col-md-12 col-sm-12 col-xs-12 message resource list-item border_bottom" resource_type="list-item" resource_id="message_#id#" item_id="#id#" datatype="message">
+        <div class="col-md-2 col-sm-2 col-xs-2 date">#created_at#</div>
+        <div class="col-md-2 col-sm-2 col-xs-2 phone">#phone#</div>
+        <div class="col-md-8 col-sm-8 col-xs-8 announce">#text#</div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="template" id="orders-history-row">
+    <div class="row resource order_history_row" resource_type="container" resource_id="order_history_row_container">
+        <div class="resource hidden" resource_type="information" resource_id="order_date">
+            <div class="date value">
+            </div>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="order_id">
+            <div class="action">
+                <b><span class="t_word">loan</span></b>
+            </div>
+            <div class="loan value">
+            </div>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="order_amount_period">
+            <div class="amount">
+                <b class="value"></b>
+            </div>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="point_id">
+            <div class="terminal value">
+            </div>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="state">
+            <div class="state">
+                <span class="value"></span>
+            </div>
+        </div>
+
+        <div class="resource hidden" resource_type="information" resource_id="comment">
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="orders-list-filter">
+    <div class="col-md-4 col-sm-4 col-xs-5 resource" resource_type="form" resource_id="orders_list_filter" id="filter">
+        <h3>Фильтр</h3>
+        <div>
+            <div class="col-xs-12">Ф.И.О.</div>
+            <div class="col-xs-12 select">
+                <input class="form-param resource form-control" resource_type="input" resource_id="orders_list_filter_query" type="text" default_value="" form_param_name="query" />
+            </div>
+        </div>
+        <div>
+            <div class="col-xs-12">Сортировка</div>
+            <div class="col-xs-12 select">
+                <select class="form-control resource form-param" resource_type="select-box" resource_id="orders_list_filter_order" form_param_name="order">
+                    <option class="default_value" selected="selected" value="0">↓ фамилия</option>
+                    <option value="1">↑ фамилия</option>
+                    <option value="2">↓ дата создания</option>
+                    <option value="3">↑ дата создания</option></select>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="col-xs-12">Статус заявки</div>
+            <div class="col-xs-12 select">
+                <select class="form-control resource form-param" resource_type="select-box" resource_id="orders_list_filter_status" form_param_name="status">
+                    <option class="static default_value" value="" selected="selected"><span class="t_word">Все</span></option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="col-xs-12">Выписка</div>
+            <form class="col-md-12 form-inline extract" role="form">
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 left">
+                    <label class="sr-only" for="firstDate">27.08.2013</label>
+                    <input class="form-control resource form-param" type="date" default_value="year_begin" resource_type="date" resource_id="orders_list_filter_from" id="firstDate" form_param_name="from" >
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 right">
+                    <label class="sr-only" for="secondDate">06.09.2013</label>
+                    <input class="form-control resource form-param" type="date" default_value="today"  resource_type="date" resource_id="orders_list_filter_to" id="secondDate" form_param_name="to" >
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="col-xs-12 result">
+                <div class="col-xs-6 left">
+                    <button class="show resource" resource_type="button" resource_id="orders_list_filter_apply" >Показать</button>
+                </div>
+                <div class="col-xs-6 right">
+                    <button class="reset resource" resource_type="button" resource_id="orders_list_filter_reset">Сбросить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="clients-list-filter">
+    <div class="col-md-4 col-sm-4 col-xs-5 resource" resource_type="form" resource_id="clients_list_filter" id="filter">
+        <h3>Фильтр</h3>
+        <div>
+            <div class="col-xs-12">Ф.И.О.</div>
+            <div class="col-xs-12 select">
+                <input class="form-param resource form-control" resource_type="input" resource_id="clients_list_filter_query" type="text" default_value="" form_param_name="query" />
+            </div>
+        </div>
+        <div>
+            <div class="col-xs-12">Сортировка</div>
+            <div class="col-xs-12 select">
+                <select class="form-control resource form-param" resource_type="select-box" resource_id="clients_list_filter_order" form_param_name="order">
+                    <option class="default_value" selected="selected" value="0">↓ фамилия</option>
+                    <option value="1">↑ фамилия</option>
+                    <option value="2">↓ дата создания</option>
+                    <option value="3">↑ дата создания</option></select>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="col-xs-12">Выписка</div>
+            <form class="col-md-12 form-inline extract" role="form">
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 left">
+                    <label class="sr-only" for="firstDate">27.08.2013</label>
+                    <input class="form-control resource form-param" type="date" default_value="year_begin" resource_type="date" resource_id="clients_list_filter_from" id="firstDate" form_param_name="from" >
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 right">
+                    <label class="sr-only" for="secondDate">06.09.2013</label>
+                    <input class="form-control resource form-param" type="date" default_value="today"  resource_type="date" resource_id="clients_list_filter_to" id="secondDate" form_param_name="to" >
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="col-xs-12 result">
+                <div class="col-xs-6 left">
+                    <button class="show resource" resource_type="button" resource_id="clients_list_filter_apply" >Показать</button>
+                </div>
+                <div class="col-xs-6 right">
+                    <button class="reset resource" resource_type="button" resource_id="clients_list_filter_reset">Сбросить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="load-more-button">
+    <button type="button" class="default resource load-more-button" resource_type="button" resource_id="load_more_button">
+        <span class="t_word">more</span>
+    </button>
+</div>
+
+<div class="template" id="empty-list-message">
+    <div class="empty-list-message">Список пуст</div>
+</div>
+
+<div class="template" id="reject-reason">
+    <p class="input">
+        <input type="radio" name="group1" class="niceRadio">
+        <label></label>
+    </p>
+</div>

@@ -1,0 +1,1338 @@
+<!-- List item's full info pages -->
+<div class="template" id="order-item-full-info">
+    <div class="resource" resource_type="full-info-page" resource_id="order_full_info_#id#" item_id="#id#" datatype="order">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <div class="col-md-10 col-sm-8 col-xs-7">
+                    <h3><span>Заявки / </span>Заявка ##id#</h3>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-5">
+                    <a class="back-to-list back resource" resource_type="link" resource_id="back_to_list">Вернуться назад</a>
+                </div>
+            </div>
+        </div>
+        <div class="row application">
+            <div class="col-md-9 col-sm-9 col-xs-9 left">
+                <div class="col-md-3 col-sm-3 col-xs-4 ">
+                    <p>Терминал<br />
+                        <span><b>##point_id#</b></span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4 ">
+                    <p>Дата займа<br />
+                        <span><b>#created_at#</b></span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 ">
+                    <p>Тариф<br />
+                        <b>#tariff#</b></p>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <p>Сумма займа<br />
+                        <b>#amount# р.</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Срок займа<br />
+                        <b>#period# дней</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4 ">
+                    <p>Процентная ставка<br />
+                        <span><b>#rate#% в день</b></span>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 ">
+                    <p>Статус<br />
+                        <span><b>#status_word#</b></span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4 ">
+                    <p>Оператор<br />
+                        <span><b>##operator_user_id#</b></span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4 ">
+                    <p>Инспектор<br />
+                        <span><b>##inspector_user_id#</b></span>
+                </div>
+
+                <h5 class="col-md-12 col-sm-12 col-xs-12">Карта заявки</h5>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Ф.И.О.<br />
+                        <b>#full_name#</b></p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Дата рождения<br />
+                        <b>#birthday#</b></p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Контактный телефон<br />
+                        <b>#phone#</b></p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Адрес<br />
+                        <b>#address#</b></p>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Место рождения<br />
+                        <b>#birthplace#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Номер паспорта<br />
+                        <b>#passport_number#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Дата выдачи паспорта<br />
+                        <b>#passport_issue_date#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Паспорт выдан<br />
+                        <b>#passport_issue_place#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Код подразделения<br />
+                        <b>#passport_department#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Статус проверки паспорта<br />
+                        <b>#passport_check_status#</b></p>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Место работы<br />
+                        <b>#job_company#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Должность<br />
+                        <b>#job_position#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Рабочий телефон<br />
+                        <b>#job_phone#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Рабочий адрес<br />
+                        <b>#job_address#</b></p>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Рег.отдел<br />
+                        <b>#reg_department#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Дата регистрации<br />
+                        <b>#reg_date#</b></p>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Имя поручителя<br />
+                        <b>#guarantor_name#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Телефон поручителя<br />
+                        <b>#guarantor_phone#</b></p>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Адрес проживания<br />
+                        <b>#actual_address#</b></p>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>ИНН<br />
+                        <b>#inn#</b></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-4">
+                    <p>Статус проверки ИНН<br />
+                        <b>#inn_check_status#</b></p>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Стационарный телефон<br />
+                        <b>#fixed_phone#</b></p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p style="margin-bottom: 10px; ">Предъявленные документы</p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 doc">
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_passport-first_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_passport-first_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="order_image_passport_first_#id#" datatype="order" step="passport-first" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_passport_photo_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_passport_photo_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="order_image_passport_photo_#id#" datatype="order" step="passport-photo" type="visible" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_passport_reg_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_passport_photo_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos"  resource_type="preview" resource_id="order_image_passport_reg_#id#" datatype="order" step="passport-reg" type="visible" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_passport_photo_uv_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_passport_photo_uv_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos"  resource_type="preview" resource_id="order_image_passport_photo_uv_#id#" datatype="order" step="passport-photo" type="uv" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_passport_reg_uv_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_passport_reg_uv_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos"  resource_type="preview" resource_id="order_image_passport_reg_uv_#id#" datatype="order" step="passport-reg" type="uv" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_fingerprint_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_fingerprint_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos"  resource_type="preview" resource_id="order_image_fingerprint_#id#" datatype="order" step="fingerprint" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_signature_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_signature_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos"  resource_type="preview" resource_id="order_image_signature_#id#" datatype="order" step="signature" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_photo_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_photo_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos"  resource_type="preview" resource_id="order_image_photo_#id#" datatype="order" step="photo" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_second_document_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_second_document_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos"  resource_type="preview" resource_id="order_image_second_document_#id#" datatype="order" step="second_document" item_id="#id#" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-1 resource" resource_type="container" resource_id="order_image_second_document_reverse_container_#id#">
+                                <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="order_image_second_document_reverse_preloader"></div>
+                                <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos"  resource_type="preview" resource_id="order_image_second_document_reverse_#id#" datatype="order" step="second_document_reverse" item_id="#id#" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <p class="border">Остаток по займу</p>
+                <p class="residue">11 500 р.</p>
+                <p class="border">История операций</p>
+
+                <div class="resource" resource_type="list" resource_id="order_operations_list">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 detailed">
+                <a class="blue col-md-6 col-sm-6 col-xs-6" href="#">
+                    <img src="res/themes/default/img/icon.png" />
+                    <span>В начало</span>
+                </a>
+                <a class="grey col-md-6 col-sm-6 col-xs-6" href="#">
+                    <img src="res/themes/default/img/icon_grey_close.png" />
+                    <span>Анкета заемщика</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="html_template" template_name="view-photos-dialog" />
+    </div>
+</div>
+
+<div class="template" id="client-item-full-info">
+    <div class="resource" resource_type="full-info-page" resource_id="client_full_info_#id#" item_id="#id#" datatype="client">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <div class="col-md-10 col-sm-8 col-xs-7">
+                    <h3><span>Заемщики / </span>Анкета ##id#</h3>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-5">
+                    <a class="back-to-list back resource" resource_type="link" resource_id="back_to_list">Вернуться назад</a>
+                </div>
+            </div>
+        </div>
+        <div class="row borrower">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="photos col-md-4 col-sm-4 col-xs-4">
+                    <div class="col-md-12 photo">
+                        <!-- insert photo src-->
+                        <img class="img-responsive" src="">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_passport-first_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_passport-first_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_passport_first_#id#" datatype="client" step="passport-first" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_passport_photo_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_passport_photo_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_passport_photo_#id#" datatype="client" step="passport-photo" type="visible" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_passport_reg_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_passport_photo_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_passport_reg_#id#" datatype="client" step="passport-reg" type="visible" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_passport_photo_uv_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_passport_photo_uv_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_passport_photo_uv_#id#" datatype="client" step="passport-photo" type="uv" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_passport_reg_uv_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_passport_reg_uv_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_passport_reg_uv_#id#" datatype="client" step="passport-reg" type="uv" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_fingerprint_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_fingerprint_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_fingerprint_#id#" datatype="client" step="fingerprint" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_signature_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_signature_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_signature_#id#" datatype="client" step="signature" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_photo_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_photo_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_photo_#id#" datatype="client" step="photo" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_second_document_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_second_document_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_second_document_#id#" datatype="client" step="second_document" item_id="#id#" />
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 resource" resource_type="container" resource_id="client_image_second_document_reverse_container_#id#">
+                            <div class="preloader preloaderSmall hidden resource" resource_type="preloader" resource_id="client_image_second_document_reverse_preloader"></div>
+                            <img class="miniphoto resource build-required open-dialog" data-toggle="modal" data-target="#view_photos" resource_type="preview" resource_id="client_image_second_document_reverse_#id#" datatype="client" step="second_document_reverse" item_id="#id#" />
+                        </div>
+                    </div>
+                </div>
+                <div class="information col-md-8 col-sm-8 col-xs-8">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>Ф.И.О.<br />
+                            <b>#full_name#</b></p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>Дата рождения<br />
+                            <b>#birthday#</b></p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>Контактный телефон<br />
+                            <b>#phone#</b></p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>Адрес<br />
+                            <b>#address#</b></p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Место рождения<br />
+                            <b>#birthplace#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Номер паспорта<br />
+                            <b>#passport_number#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Дата выдачи паспорта<br />
+                            <b>#passport_issue_date#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Паспорт выдан<br />
+                            <b>#passport_issue_place#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Код подразделения<br />
+                            <b>#passport_department#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Статус проверки паспорта<br />
+                            <b>#passport_check_status#</b></p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Место работы<br />
+                            <b>#job_company#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Должность<br />
+                            <b>#job_position#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Рабочий телефон<br />
+                            <b>#job_phone#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Рабочий адрес<br />
+                            <b>#job_address#</b></p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Рег.отдел<br />
+                            <b>#reg_department#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Дата регистрации<br />
+                            <b>#reg_date#</b></p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Имя поручителя<br />
+                            <b>#guarantor_name#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Телефон поручителя<br />
+                            <b>#guarantor_phone#</b></p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>Адрес проживания<br />
+                            <b>#actual_address#</b></p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>ИНН<br />
+                            <b>#inn#</b></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p>Статус проверки ИНН<br />
+                            <b>#inn_check_status#</b></p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>Стационарный телефон<br />
+                            <b>#fixed_phone#</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="table col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-4">
+                    <p>Количество заявок<br />
+                        <b>#no_data#</b></p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4">
+                    <p>Полученные займы<br />
+                        <b>#no_data#</b></p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4">
+                    <p>Просроченные займы<br />
+                        <b>#no_data#</b></p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4">
+                    <p>Всего получил<br />
+                        <b>#no_data#</b></p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4">
+                    <p>Всего заплатил<br />
+                        <b>#no_data#</b><br />
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4">
+                    <p>Долг<br />
+                        <b>#no_data#</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="html_template" template_name="view-photos-dialog" />
+    </div>
+</div>
+
+<div class="template" id="user-item-full-info">
+    <div class="resource" resource_type="full-info-page" resource_id="user_full_info_#id#" item_id="#id#" datatype="user">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <div class="col-md-10 col-sm-10 col-xs-10">
+                    <h3><span>Сотрудники / </span>Редактирование</h3>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-5">
+                    <a class="back-to-list resource" resource_type="link" resource_id="back_to_list">Вернуться назад</a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="editing_staff">
+            <div class="col-md-6 col-sm-6 col-xs-6 left resource" resource_type="form" resource_id="user_info_form">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Фамилия, имя и отчество сотрудника</p>
+                    <form class="col-md-4 col-sm-4 col-xs-5" role="form">
+                        <div class="form-group">
+                            <input type="text" value="#surname#" class="form-control form-param resource" resource_type="input" resource_id="user_surname_#id#" form_param_name="surname" default_value="" />
+                        </div>
+                    </form>
+                    <form class="col-md-4 col-sm-4 col-xs-5" role="form">
+                        <div class="form-group padding_left">
+                            <input type="text" value="#name#" class="form-control form-param resource" resource_type="input" resource_id="user_name_#id#" form_param_name="name" default_value="">
+                        </div>
+                    </form>
+                    <form class="col-md-4 col-sm-4 col-xs-5" role="form">
+                        <div class="form-group padding_left">
+                            <input type="text" value="#middlename#" class="form-control form-param resource" resource_type="input" resource_id="user_middlename_#id#" form_param_name="middlename" default_value="">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Контактный телефон</p>
+                    <form role="form">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-6 left">
+                            <input type="text" value="#phone#" class="form-control form-param resource" resource_type="input" resource_id="user_phone_#id#" form_param_name="phone" mask="phone">
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 col-xs-6 right">
+                            <input type="text" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <form role="form">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-6">
+                            <p>Логин</p>
+                            <input type="text" value="#login#" class="form-control form-param resource" resource_type="input" resource_id="user_login_#id#" form_param_name="login" default_value="">
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 col-xs-6" style="padding-left: 15px;">
+                            <p>Пароль для входа</p>
+                            <input type="password" value="" class="form-control form-param resource" resource_type="input" resource_id="user_password_#id#" form_param_name="password" default_value="" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 right">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Роли пользователя</p>
+                    <div class="resource" resource_type="list" resource_id="user_roles_list"></div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Зона обслуживания</p>
+                    <div class="resource" resource_type="list" resource_id="user_points_list"></div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 button_group">
+                <div class="col-md-3 col-sm-3 col-xs-3 left resource" resource_type="button" resource_id="delete_user">
+                    <button>Удалить профиль</button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-5 col-sm-offset-5 col-xs-offset-5 resource" resource_type="button" resource_id="save_user_info">
+                    <button class="green">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="point-item-full-info">
+    <div class="resource" resource_type="full-info-page" resource_id="point_full_info_#id#" item_id="#id#" datatype="point">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <div class="col-md-10 col-sm-8 col-xs-7">
+                    <h3><span>Точки и терминалы / </span>#address#</h3>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-5">
+                    <a class="back-to-list resource" resource_type="link" resource_id="back_to_list">Вернуться назад</a>
+                </div>
+            </div>
+        </div>
+        <div class="point_view row">
+            <div class="col-md-8 col-sm-8 col-xs-8 left">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    Статус
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 margin_bottom bold green">
+                    Терминал активен (работает)
+                </div>
+                <div class="margin_bottom row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 ">
+                            Адрес терминала
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 bold ">
+                            #address#
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 ">
+                            Режим работы
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 bold ">
+                            #schedule#
+                        </div>
+                    </div>
+                </div>
+                <div class="margin_bottom row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 ">
+                            Сумма в купюроприемнике
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 bold ">
+                            #amount_in# р.
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 ">
+                            Сумма в диспенсере
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 bold ">
+                            #amount_out# р.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6 delete">
+                        <button class="btn red resource" resource_type="button" resource_id="delete_point_button">Удалить</button>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 change">
+                        <button class="btn btn-success resource" resource_type="button" resource_id="edit_point_button" data-toggle="dropdown">Изменить</button>
+                    </div>
+                </div>
+                <div class="rubric row">
+                    <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h3>Тарифный план</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 resource padding_top" resource_type="list" resource_id="point_tariffs_list"></div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4  right">
+                <div class="col-md-12 col-xs-12 col-sm-12 bold ">Персонал</div>
+                <div class="col-md-12 col-sm-12 col-xs-12 resource full_padding" resource_type="list" resource_id="point_users_list"></div>
+            </div>
+
+            <div class="col-md-8 col-sm-8 col-xs-8">
+                <div class="html_template" template_name="dynamics-block"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="tariff-item-full-info">
+    <div class="resource" resource_type="full-info-page" resource_id="tariff_full_info_#id#" item_id="#id#" datatype="tariff">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <h3><span>Тарифы</span> / #name#</h3>
+            </div>
+        </div>
+        <div class="row resource" resource_type="form" resource_id="tariff_info_form" id="tariff_new">
+            <div class="col-sm-6 col-xs-12 left">
+                <p>Название</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <div class="col-sm-6 col-xs-12 left">
+                    <p>Начало действия тарифа</p>
+                </div>
+                <div class="col-sm-6 col-xs-12 right">
+                    <p>Заканчивается</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <input type="text" value="#name#" class="form-control form-param resource not-empty" resource_type="input" resource_id="tariff_name_#id#" form_param_name="name" default_value="">
+            </div>
+            <div class="right col-sm-6 col-xs-12">
+                <div class="dot col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="date" value="#activation_at_iso#" class="form-control form-param resource not-empty" resource_type="date" resource_id="activation_at_#id#" form_param_name="activation_at" default_value="">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input type="date" value="#finishing_at_iso#" class="form-control form-param resource" resource_type="date" resource_id="finishing_at_#id#" form_param_name="finishing_at" default_value="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <p><b>Настройки</b></p>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <p><b>Штрафы</b></p>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <p>Сумма, руб.</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <p>Беспроцентный штрафной период</p>
+            </div>
+            <div class="left col-sm-6 col-xs-12">
+                <div class="dot col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="#amount_min#" class="form-control form-param resource not-empty" resource_type="input" resource_id="amount_min_#id#" form_param_name="amount_min" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input type="text" value="#amount_max#" class="form-control form-param resource not-empty" resource_type="input" resource_id="amount_max_#id#" form_param_name="amount_max" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <div class=" col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="#skip_penalty_days#" class="form-control form-param resource not-empty" resource_type="input" resource_id="skip_penalty_days_#id#" form_param_name="skip_penalty_days" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <p>Срок, дней</p>
+            </div>
+            <div class="right col-sm-6 col-xs-12">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <p>Штрафной период</p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <p>Штрафные проценты</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left col-sm-6 col-xs-12">
+                <div class="dot col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="#period_min#" class="form-control form-param resource not-empty" resource_type="input" resource_id="period_min_#id#" form_param_name="period_min" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input type="text" value="#period_max#" class="form-control form-param resource not-empty" resource_type="input" resource_id="period_max_#id#" form_param_name="period_max" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="right col-sm-6 col-xs-12">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="#penalty_period#" class="form-control form-param resource not-empty" resource_type="input" resource_id="penalty_period_#id#" form_param_name="penalty_period" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <div class="col-sm-6 col-xs-12 left">
+                            <input type="text" value="#penalty_rate#" class="form-control form-param resource not-empty" resource_type="input" resource_id="penalty_rate_#id#" form_param_name="penalty_rate" default_value="" mask="number">
+                        </div>
+                        <div class="col-sm-6 col-xs-12 right">
+                            <p style="margin: 10px 0 0 0;">% в день</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <p>Проценты</p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <p>Беспроцентный период</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <p>Штрафная комиссия</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <div class="col-sm-6 col-xs-12 left">
+                            <input type="text" value="#rate#" class="form-control form-param resource not-empty" resource_type="input" resource_id="penalty_rate_#id#" form_param_name="rate" default_value="" mask="number">
+                        </div>
+                        <div class="col-sm-6 col-xs-12 right">
+                            <p style="margin: 10px 0 0 0;">% в день</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input type="text" value="#skip_days#" class="form-control form-param resource not-empty" resource_type="input" resource_id="skip_days_#id#" form_param_name="skip_days" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="#penalty_fee#" class="form-control form-param resource not-empty" resource_type="input" resource_id="penalty_fee_#id#" form_param_name="penalty_fee" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input id="penalty_fee_fixed_#id#" type="checkbox" class="form-param resource" resource_type="input" resource_id="penalty_fee_fixed_#id#" form_param_name="penalty_fee_fixed" name="penalty_fee_fixed_#id#" #penalty_fee_fixed_check# >
+                        <label for="penalty_fee_fixed_#id#">Фиксированная</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-6">
+                <p>Комиссия за выдачу</p>
+            </div>
+            <div class="col-xs-6 right">
+                <p>Штрафная комиссия при завершении штрафного периода</p>
+            </div>
+            <div class="col-xs-6">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="#fee#" class="form-control form-param resource not-empty" resource_type="input" resource_id="fee_#id#" form_param_name="fee" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input id="fee_fixed_#id#" type="checkbox" class="form-param resource" resource_type="input" resource_id="fee_fixed_#id#" form_param_name="fee_fixed" name="fee_fixed_#id#" #penalty_fee_fixed_check# >
+                        <label for="fee_fixed_#id#">Фиксированная</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 right">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="#final_penalty_fee#" class="form-control form-param resource not-empty" resource_type="input" resource_id="final_penalty_fee_#id#" form_param_name="final_penalty_fee" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                    <button class="btn gray back-to-list cancel resource" resource_type="link" resource_id="back_to_list">Отменить</button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 ">
+                    <button class="btn green resource" resource_type="button" resource_id="save_tariff_button">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="tariff-create-page">
+    <div class="resource" resource_type="full-info-page" resource_id="tariff_full_info" item_id="" datatype="tariff">
+        <div class="rubric row">
+            <div class="col-md-12">
+                <h3><span>Тарифы</span> / Новый тариф</h3>
+            </div>
+        </div>
+        <div class="row resource" resource_type="form" resource_id="tariff_info_form" id="tariff_new">
+            <div class="col-sm-6 col-xs-12 left">
+                <p>Название</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <div class="col-sm-6 col-xs-12 left">
+                    <p>Начало действия тарифа</p>
+                </div>
+                <div class="col-sm-6 col-xs-12 right">
+                    <p>Заканчивается</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="tariff_name" form_param_name="name" default_value="">
+            </div>
+            <div class="right col-sm-6 col-xs-12">
+                <div class="dot col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="date" value="" class="form-control form-param resource not-empty" resource_type="date" resource_id="activation_at" form_param_name="activation_at" default_value="">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input type="date" value="" class="form-control form-param resource" resource_type="date" resource_id="finishing_at" form_param_name="finishing_at" default_value="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <p><b>Настройки</b></p>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <p><b>Штрафы</b></p>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <p>Сумма, руб.</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <p>Беспроцентный штрафной период</p>
+            </div>
+            <div class="left col-sm-6 col-xs-12">
+                <div class="dot col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="amount_min" form_param_name="amount_min" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="amount_max" form_param_name="amount_max" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <div class=" col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="skip_penalty_days" form_param_name="skip_penalty_days" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <p>Срок, дней</p>
+            </div>
+            <div class="right col-sm-6 col-xs-12">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <p>Штрафной период</p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <p>Штрафные проценты</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left col-sm-6 col-xs-12">
+                <div class="dot col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="period_min" form_param_name="period_min" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="period_max" form_param_name="period_max" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="right col-sm-6 col-xs-12">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="penalty_period" form_param_name="penalty_period" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <div class="col-sm-6 col-xs-12 left">
+                            <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="penalty_rate" form_param_name="penalty_rate" default_value="" mask="number">
+                        </div>
+                        <div class="col-sm-6 col-xs-12 right">
+                            <p style="margin: 10px 0 0 0;">% в день</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <p>Проценты</p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <p>Беспроцентный период</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <p>Штрафная комиссия</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 left">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <div class="col-sm-6 col-xs-12 left">
+                            <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="penalty_rate" form_param_name="rate" default_value="" mask="number">
+                        </div>
+                        <div class="col-sm-6 col-xs-12 right">
+                            <p style="margin: 10px 0 0 0;">% в день</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="skip_days" form_param_name="skip_days" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 right">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="penalty_fee" form_param_name="penalty_fee" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input id="penalty_fee_fixed" type="checkbox" class="form-param resource" resource_type="input" resource_id="penalty_fee_fixed" form_param_name="penalty_fee_fixed" name="penalty_fee_fixed">
+                        <label for="penalty_fee_fixed">Фиксированная</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-6">
+                <p>Комиссия за выдачу</p>
+            </div>
+            <div class="col-xs-6 right">
+                <p>Штрафная комиссия при завершении штрафного периода</p>
+            </div>
+            <div class="col-xs-6">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="fee" form_param_name="fee" default_value="" mask="number">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right">
+                        <input id="fee_fixed" type="checkbox" class="form-param resource" resource_type="input" resource_id="fee_fixed" form_param_name="fee_fixed" name="fee_fixed"  >
+                        <label for="fee_fixed">Фиксированная</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 right">
+                <div class="col-xs-12">
+                    <div class="col-sm-6 col-xs-12 left">
+                        <input type="text" value="" class="form-control form-param resource not-empty" resource_type="input" resource_id="final_penalty_fee" form_param_name="final_penalty_fee" default_value="" mask="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                    <button class="btn gray back-to-list cancel resource" resource_type="link" resource_id="back_to_list">Отменить</button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 ">
+                    <button class="btn green resource" resource_type="button" resource_id="save_tariff_button">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="point-create-page">
+    <div class="rubric row">
+        <div class="col-md-12">
+            <div class=" col-xs-12 ">
+                <h3>Точки и терминалы / <span>Добавление</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="html_template" template_name="point-create-form" />
+</div>
+
+<div class="template" id="point-create-form">
+    <div class="resource" resource_type="form" resource_id="point_create_form">
+        <div class="row point_edit">
+            <div class=" col-xs-6 left">
+                <p class=" col-xs-12 ">Тип</p>
+                <form role="form">
+                    <div class="form-group form-param not-empty resource" resource_type="radio" resource_id="point_type" form_param_name="type">
+                        <div class="col-md-6 col-sm-6 col-xs-12 ">
+                            <input type="radio" id="point_type_manual" name="point_type" value="1">
+                            <label for="point_type_manual">Точка обслуживания</label>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="radio" id="point_type_auto" name="point_type" value="0">
+                            <label for="point_type_auto">Терминал</label>
+                        </div>
+                    </div>
+
+                </form>
+                <p class=" col-xs-12 ">Группа</p>
+                <form role="form">
+                    <div class="form-group">
+                        <div class="col-xs-12 ">
+                            <div class="form-param not-empty resource" resource_type="radio" resource_id="point_group" form_param_name="group_id">
+                                <div class="resource" resource_type="list" resource_id="point_groups_list">
+                                    <input type="radio" class="resource" resource_type="input" resource_id="new_point_group" id="point_group_0" name="point_group" value="0">
+                                    <label for="point_group_0">Новая группа</label>
+                                </div>
+                            </div>
+                            <br>
+                            <input class="resource form-param" type="text" name="text" resource_type="input" resource_id="new_group_name" form_param_name="group_name">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class=" col-xs-6 right">
+                <p class=" col-xs-12 ">Адрес</p>
+                <form role="form">
+                    <div class=" col-xs-12 form-group">
+                        <input class="resource form-param not-empty" type="text" name="address" resource_type="input" resource_id="point_address" form_param_name="address">
+                    </div>
+
+                </form>
+                <p class=" col-xs-12 ">Контактный телефон</p>
+                <form role="form">
+                    <div class="col-xs-12 form-group">
+                        <div class="col-md-12 col-xs-12 col-sm-12 left">
+                            <input class="half left form-param resource" type="text" name="text" resource_type="input" resource_id="point_phone" form_param_name="phone">
+                        </div>
+                    </div>
+
+                </form>
+                <p class=" col-xs-12 " style="margin: 20px 0 10px 0;">Режим работы</p>
+                <form role="form">
+                    <div class=" col-xs-12 form-group">
+                        <div class=" col-xs-12 left">
+                            <div class="col-xs-12 form-group week form-param resource" resource_type="multi-checkbox" resource_id="work_days" form_param_name="day_week">
+                                <input type="checkbox" id="monday" name="monday" value="Пн">
+                                <label for="monday">Пн</label>
+                                <input type="checkbox" id="tuesday" name="tuesday" value="Вт">
+                                <label for="tuesday">Вт</label>
+                                <input type="checkbox" id="wednesday" name="wednesday" value="Ср">
+                                <label for="wednesday">Ср</label>
+                                <input type="checkbox" id="thursday" name="thursday" value="Чт">
+                                <label for="thursday">Чт</label>
+                                <input type="checkbox" id="friday" name="friday" value="Пт">
+                                <label for="friday">Пт</label>
+                                <input type="checkbox" id="saturday" name="saturday" value="Сб">
+                                <label for="saturday">Сб</label>
+                                <input type="checkbox" id="sunday" name="sunday" value="Вс">
+                                <label for="sunday">Вс</label>
+                            </div>
+                        </div>
+                        <input type="hidden" class="form-param resource" resource_type="input" resource_id="day_type" id="day_type" name="sunday" value="w" form_param_name="day_type">
+                        <div class=" col-xs-12">
+                            <p>Часы работы</p>
+                            <form role="form">
+                                <div class=" col-xs-6 form-group time">
+                                    <div class="col-md-3 col-sm-3 col-xs-3 left">
+                                        <select class="resource form-param" resource_type="select-box" resource_id="hour_begin" form_param_name="hour_begin">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 right middle">
+                                        <select class="resource form-param" resource_type="select-box" resource_id="min_begin" form_param_name="min_begin">
+                                            <option>00</option>
+                                            <option>30</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 left middle">
+                                        <select class="resource form-param" resource_type="select-box" resource_id="hour_end" form_param_name="hour_end">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 right">
+                                        <select class="resource form-param" resource_type="select-box" resource_id="min_end" form_param_name="min_end">
+                                            <option>00</option>
+                                            <option>30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class=" col-xs-12 ">
+                <div class="col-md-2 col-sm-2 col-xs-2 ">
+                    <button class="cancel">Отменить</button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-6 col-sm-offset-6 col-xs-offset-6">
+                    <button class="save resource" resource_type="button" resource_id="save_point_button">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="point-edit-page">
+    <div class="rubric row">
+        <div class="col-md-12">
+            <div class=" col-xs-12 ">
+                <h3>Точки и терминалы / <span>Редактирование</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="html_template" template_name="point-edit-form" />
+</div>
+
+<div class="template" id="point-edit-form">
+    <div class="resource" resource_type="form" resource_id="point_edit_form">
+        <div class="row point_edit">
+            <div class="col-md-6 col-sm-6 col-xs-6 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 left">
+                <p class=" col-xs-12 ">Тип</p>
+                <form role="form">
+                    <div class="form-group form-param not-empty resource" resource_type="radio" resource_id="point_type" form_param_name="type" value="#point_type#">
+                        <div class="col-md-6 col-sm-6 col-xs-12 ">
+                            <input type="radio" id="point_type_manual" name="point_type" value="1">
+                            <label for="point_type_manual">Точка обслуживания</label>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="radio" id="point_type_auto" name="point_type" value="0">
+                            <label for="point_type_auto">Терминал</label>
+                        </div>
+                    </div>
+                </form>
+                <p class=" col-xs-12 ">Адрес</p>
+                <form role="form">
+                    <div class=" col-xs-12 form-group">
+                        <input class="resource form-param not-empty" type="text" name="address" resource_type="input" resource_id="point_address" form_param_name="address" value="#address#">
+                    </div>
+                </form>
+                <p class=" col-xs-12 ">Контактный телефон</p>
+                <form role="form">
+                    <div class="col-xs-12 form-group">
+                        <div class="col-md-12 col-xs-12 col-sm-12 left">
+                            <input class="half left form-param resource" type="text" name="text" resource_type="input" resource_id="point_phone" form_param_name="phone" value="#phone#">
+                        </div>
+                    </div>
+
+                </form>
+                <p class=" col-xs-12 " style="margin: 20px 0 10px 0;">Режим работы</p>
+                <form role="form">
+                    <div class=" col-xs-12 form-group">
+                        <div class=" col-xs-12 left">
+                            <div class="col-xs-12 form-group week form-param resource" resource_type="multi-checkbox" resource_id="work_days" form_param_name="day_week" value="#work_days_arr#">
+                                <input type="checkbox" id="monday" name="monday" value="Пн">
+                                <label for="monday">Пн</label>
+                                <input type="checkbox" id="tuesday" name="tuesday" value="Вт">
+                                <label for="tuesday">Вт</label>
+                                <input type="checkbox" id="wednesday" name="wednesday" value="Ср">
+                                <label for="wednesday">Ср</label>
+                                <input type="checkbox" id="thursday" name="thursday" value="Чт">
+                                <label for="thursday">Чт</label>
+                                <input type="checkbox" id="friday" name="friday" value="Пт">
+                                <label for="friday">Пт</label>
+                                <input type="checkbox" id="saturday" name="saturday" value="Сб">
+                                <label for="saturday">Сб</label>
+                                <input type="checkbox" id="sunday" name="sunday" value="Вс">
+                                <label for="sunday">Вс</label>
+                            </div>
+                        </div>
+                        <input type="hidden" class="form-param resource" resource_type="input" resource_id="day_type" id="day_type" name="sunday" value="w" form_param_name="day_type">
+                        <div class=" col-xs-12">
+                            <p>Часы работы</p>
+                            <form role="form">
+                                <div class=" col-xs-6 form-group time">
+                                    <div class="col-md-3 col-sm-3 col-xs-3 left">
+                                        <select class="resource form-param" resource_type="select-box" resource_id="hour_begin" form_param_name="hour_begin" value="#hour_begin#">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 right middle">
+                                        <select class="resource form-param" resource_type="select-box" resource_id="min_begin" form_param_name="min_begin" value="#min_begin#">
+                                            <option>00</option>
+                                            <option>30</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 left middle">
+                                        <select class="resource form-param" resource_type="select-box" resource_id="hour_end" form_param_name="hour_end" value="#hour_end#">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 right">
+                                        <select class="resource form-param" resource_type="select-box" resource_id="min_end" form_param_name="min_end" value="#min_end#">
+                                            <option>00</option>
+                                            <option>30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </form>
+                <div class=" col-xs-12 ">
+                    <div class="col-md-6 col-sm-6 col-xs-6 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+                        <button class="save resource" resource_type="button" resource_id="save_point_button">Сохранить изменения</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template" id="user-create-page">
+    <div class="rubric row">
+        <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><span>Сотрудники / </span>Новый пользователь</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="editing_staff">
+        <div class="col-md-6 col-sm-6 col-xs-6 left col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+            <div class="resource" resource_type="form" resource_id="user_info_form">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Фамилия, имя и отчество сотрудника</p>
+                    <form role="form">
+                        <div class="form-group col-md-4 col-sm-4 col-xs-4">
+                            <input type="name" class="form-control resource form-param not-empty" resource_type="input" resource_id="user_surname" form_param_name="surname">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-4 col-xs-4" style="padding-left: 15px">
+                            <input type="name" class="form-control resource form-param not-empty" resource_type="input" resource_id="user_name" form_param_name="name">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-4 col-xs-4" style="padding-left: 15px">
+                            <input type="name" class="form-control resource form-param not-empty" resource_type="input" resource_id="user_middlename" form_param_name="middlename">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Контактный телефон</p>
+                    <form role="form">
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12 left">
+                            <input type="phone" class="form-control resource form-param not-empty" resource_type="input" resource_id="user_phone" form_param_name="phone" mask="phone">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <form role="form" class="col-md-6 col-sm-6 col-xs-6">
+                        <p>Логин</p>
+                        <div class="form-group">
+                            <input type="name" class="form-control resource form-param not-empty" resource_type="input" resource_id="user_login" form_param_name="login">
+                        </div>
+                    </form>
+                    <form role="form" class="col-md-6 col-sm-6 col-xs-6">
+                        <p style="padding-left: 15px;">Пароль для входа</p>
+                        <div class="form-group left" style="padding-left: 15px;">
+                            <input type="phone" class="form-control resource form-param not-empty" resource_type="input" resource_id="user_password" form_param_name="password">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 button_group">
+                <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4">
+                    <button class="green resource" resource_type="button" resource_id="save_user_button">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
